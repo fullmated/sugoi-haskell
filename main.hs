@@ -12,5 +12,8 @@ fizz n | n `mod` 15 == 0  = "FizzBuzz"
        | n `mod` 5  == 0  = "Buzz"
        | otherwise = show n
 
-main :: IO()
-main = mapM_ putStrLn $ map fizz [1..100]
+-- main :: IO()
+main = do
+  -- どうやってInt -> Stringに変換するのか・・・
+  let a = factorial 100
+  show a
